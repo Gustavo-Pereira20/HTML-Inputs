@@ -10,14 +10,10 @@
     <main class="main-container">
         <h1>Lorem ipsum dolor sit amet consectetur.</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius atque iure assumenda?</p>
-        <form class="input-catalog-form"> 
+        <form class="input-catalog-form" action="./cadastro-sucesso.html"> 
             <section class="form-section">
                 <fieldset class="form-group">
-                </fieldset>
-            </section>
-            <section class="form-section">
-                <fieldset class="form-group">
-                    <legend class="form-group-title"></legend>
+                    <legend class="form-group-title">Dados pessoais e Texto</legend>
                     <label for="nome" class="form-label">Nome:</label>
                     <input type="text" id="nome" name="nome" class="form-input" placeholder="Digite seu nome completo" required minlength="3">
 
@@ -39,18 +35,93 @@
             </section>
             <section class="form-section">
                 <fieldset class="form-group">
+
+                    <legend class="form-group-title">Opções e Seleções</legend>
+            
+                    <label for="inputselect" class="form-label">Qual sua área de atuação?</label>
+                    <select name="area" id="inputselect" class="form-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="frontend">Front-End</option>
+                        <option value="backend">Back-End</option>
+                        <option value="fullstack">Full-Stack</option>
+                        <option value="devops">DevOps</option>
+                    </select>
+                    
+                    <p class="form-label">Quais tecnologias você conhece?</p>
+                    <div class="form-check">
+                        <input type="checkbox" name="tecnologia" id="html" value="html" checked>
+                        <label for="">HTML</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="tecnologia" id="css" value="css">
+                        <label for="css">CSS</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="tecnologia" id="javascript" value="javascript">
+                        <label for="javascript">Javacript</label>
+                    </div>
+
+                    <p class="form-label">Qual seu nível de experiência?</p>
+                    <div class="form-check">
+                        <input type="radio" name="tecnologia" id="iniciante">
+                        <label for="iniciante">Iniciante</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="tecnologia" id="intermediario">
+                        <label for="intermediario">Intermediário</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="tecnologia" id="avancado">
+                        <label for="avancado">Avançado</label>
+                    </div>
+                    
+
                 </fieldset>
             </section>
             <section class="form-section">
                 <fieldset class="form-group">
+                    <legend class="form-group-title">Valores Numéricos e Intervalos</legend>
+                     
+                    <label for="idade" class="form-label">Idade:</label>
+                    <input type="number" name="idade" id="idade" class="form-input" min="18" max="120" step="1" value="18" required></input>
+
+                    <label for="satisfacao" class="form-label">Satisfação:</label>
+                    <input type="range" name="satisfacao" id="satisfacao" class="form-range" min="0" max="100" step="10" value="50">
+
                 </fieldset>
             </section>
             <section class="form-section">
                 <fieldset class="form-group">
+                    <legend class="form-group-title">Datas e Horas</legend>
+                    <label for="data-nascimento" class="form-label">Data de Nascimento</label>
+                    <input type="date" name="data-nascimento" id="data-nascimento" class="form-input"></input>
+
+                    <label for="hora-evento" class="form-label">Hora do Evento:</label>
+                    <input type="time" name="hora-evento" id="hora-evento" class="form-input"></input>
+
+                    <label for="reuniao" class="form-label">Data e Hora da Reunião:</label>
+                    <input type="datetime-local" name="reuniao" id="reuniao" class="form-input"></input>
                 </fieldset>
             </section>
             <section class="form-section">
                 <fieldset class="form-group">
+                    <legend class="form-group-title">Arquivos e Cores</legend>
+
+                    <label for="cor-favorita" class="form-label">Cor Favorita:</label>
+                    <input type="color" name="cor-favorita" id="cor-favorita" class="form-color-picker" value="#4a90e2">
+
+                    <label for="foto-perfil" class="form-label">Foto de Perfil</label>
+                    <input type="file" name="foto-perfil" id="foto-perfil" accept="image/png, image/jpeg" class="form-file-input">
+                </fieldset>
+            </section>
+            <section class="form-section">
+                <fieldset class="form-group">
+                    <legend class="form-group-title">Controles do Formulário</legend>
+                    <div class="form-controls">
+                        <input type="submit" value="Enviar Formulário" class="form-button submit-button">
+                        <input type="reset" value="Limpar Tudo" class="form-button reset-button">
+                        <input type="button" value="Botão Genérico" class="form-button action-button" onclick="alert('Botão clicado!')">
+                    </div>
                 </fieldset>
             </section>
 
