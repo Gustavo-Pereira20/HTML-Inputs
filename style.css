@@ -5,57 +5,95 @@
 }
 
 .main-container{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(181, 182, 183);
 }
 
 .input-catalog-form{
-
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: white;
 }
 
 .form-section{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px;
 
 }
 
 .form-group{
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
 }
 
 .form-group-title{
-
+    font-weight: bold;
+    color: rgb(59, 59, 149);
 }
 
 .form-label{
-
+    font-weight: bold;
 }
 
 .form-input{
-
+    padding: 10px;
 }
 
 .form-select{
-
+    padding: 10px;
 }
 
 .form-check{
 
 }
 
-.form-controls{
+.form-range{
+    width: 25%;
+}
 
+.form-controls{
+    width: 55%;
+    display: flex;
+    border: none;
+    justify-content: space-around;
 }
 
 .form-button{
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5 ease;
+}
 
+.form-button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .submit-button{
-
+    background-color: rgb(94, 94, 239);
 }
 
 .reset-button{
-
+    background-color: rgb(68, 68, 93);
 }
 
 .action-button{
-    
+    background-color: green;
 }
